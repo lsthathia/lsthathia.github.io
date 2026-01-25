@@ -2,208 +2,198 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Lovish Sthathia | SAP Consultant / Business Analyst</title>
+  <title>Lovish Sthathia – Lebenslauf</title>
 
   <style>
     body {
       margin: 0;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background-color: #f2f4f7;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f2f2f2;
       color: #333;
     }
 
-    .wrapper {
+    .cv {
       max-width: 1000px;
-      margin: 40px auto;
+      margin: 30px auto;
       background: #ffffff;
+      display: grid;
+      grid-template-columns: 320px 1fr;
       box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-      border-radius: 10px;
-      overflow: hidden;
     }
 
-    /* HEADER */
-    .header {
-      background: #1f2937;
-      color: #ffffff;
-      padding: 30px 40px;
-      display: flex;
-      align-items: center;
-      gap: 25px;
+    /* LEFT COLUMN */
+    .left {
+      background: #f7f7f7;
+      padding: 30px 25px;
     }
 
-    .profile-photo {
-      width: 140px;
-      height: 140px;
-      border-radius: 8px;
+    .photo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .photo img {
+      width: 180px;
+      height: 180px;
       object-fit: cover;
-      border: 3px solid #ffffff;
-      background: #fff;
+      border-radius: 6px;
+      border: 3px solid #ddd;
     }
 
-    .header h1 {
-      margin: 0;
-      font-size: 30px;
-      letter-spacing: 0.5px;
+    .left h2 {
+      font-size: 16px;
+      margin-top: 25px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      text-transform: uppercase;
     }
 
-    .subtitle {
-      font-size: 18px;
-      margin-top: 6px;
-      color: #93c5fd;
-      font-weight: 600;
-    }
-
-    .contact {
+    .left p, .left li {
       font-size: 14px;
-      margin-top: 10px;
-      color: #e5e7eb;
+      margin: 6px 0;
     }
 
-    /* CONTENT */
-    .content {
-      padding: 40px;
+    .left ul {
+      padding-left: 16px;
+      margin: 8px 0;
     }
 
-    h2 {
-      font-size: 20px;
-      color: #1f2937;
-      border-bottom: 2px solid #e5e7eb;
+    /* RIGHT COLUMN */
+    .right {
+      padding: 35px 40px;
+    }
+
+    .name {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .title {
+      font-size: 18px;
+      color: #0a66c2;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 28px;
+    }
+
+    .section h3 {
+      font-size: 18px;
+      border-bottom: 2px solid #e0e0e0;
       padding-bottom: 6px;
-      margin-top: 35px;
-    }
-
-    p {
-      line-height: 1.6;
-    }
-
-    ul {
-      padding-left: 18px;
-    }
-
-    ul li {
-      margin-bottom: 6px;
+      margin-bottom: 10px;
     }
 
     .job-title {
-      font-weight: 600;
-      font-size: 16px;
-      margin-top: 15px;
+      font-weight: bold;
+      font-size: 15px;
     }
 
     .job-meta {
       font-size: 14px;
-      color: #555;
+      color: #666;
       margin-bottom: 6px;
     }
 
-    .skills span {
-      display: inline-block;
-      background: #eef2ff;
-      color: #1f2937;
-      padding: 6px 12px;
-      margin: 6px 6px 0 0;
-      border-radius: 20px;
-      font-size: 14px;
+    .right ul {
+      padding-left: 18px;
+      margin-top: 6px;
     }
 
-    /* FOOTER */
-    .footer {
-      background: #f9fafb;
-      padding: 20px 40px;
-      font-size: 13px;
-      color: #666;
-      text-align: center;
+    .right li {
+      margin-bottom: 6px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-<div class="wrapper">
+<div class="cv">
 
-  <!-- HEADER -->
-  <div class="header">
-    <img src="profile.jpg" alt="Lovish Sthathia" class="profile-photo">
-
-    <div>
-      <h1>Lovish Sthathia</h1>
-      <div class="subtitle">SAP Consultant / Business Analyst</div>
-      <div class="contact">
-        📍 Cottbus, Germany &nbsp;|&nbsp;
-        📧 sthathialovish@gmail.com &nbsp;|&nbsp;
-        📞 +49 155 10934109
-      </div>
+  <!-- LEFT COLUMN -->
+  <div class="left">
+    <div class="photo">
+      <img src="profile.jpg" alt="Lovish Sthathia">
     </div>
-  </div>
 
-  <!-- CONTENT -->
-  <div class="content">
-
-    <h2>Professional Summary</h2>
-    <p>
-      Results-driven SAP Consultant and Business Analyst with experience in business
-      analysis, market trend evaluation, and sales forecasting.
-      Currently working as a <strong>Junior IT Support Mitarbeiter</strong> at Techzone Mobile,
-      gaining hands-on experience in IT support, troubleshooting, and system operations.
-      Strong background in data-driven decision-making using SAP, Power BI, SQL, and Python.
-    </p>
-
-    <h2>Professional Experience</h2>
-
-    <div class="job-title">Junior IT Support Mitarbeiter</div>
-    <div class="job-meta">Techzone Mobile – Leipzig, Germany | July 2025 – Present</div>
-    <ul>
-      <li>Providing first-level IT support for hardware, software, and mobile devices.</li>
-      <li>Troubleshooting system, network, and application-related issues.</li>
-      <li>Supporting users and maintaining IT documentation.</li>
-    </ul>
-
-    <div class="job-title">Data & Business Analysis Associate</div>
-    <div class="job-meta">SatPar Infotech Pvt. Ltd. | Jan 2021 – Jan 2024</div>
-    <ul>
-      <li>Developed Power BI dashboards and Excel reports for performance tracking.</li>
-      <li>Conducted market research and automated reporting solutions.</li>
-      <li>Delivered actionable insights to cross-functional teams.</li>
-    </ul>
-
-    <div class="job-title">Business Analytics Intern</div>
-    <div class="job-meta">Hindustan Coca-Cola Beverages | May 2019 – Jul 2019</div>
-    <ul>
-      <li>Marketing analysis and SAP module exposure.</li>
-      <li>Optimized logistics processes, reducing transport costs by 5%.</li>
-    </ul>
+    <h2>Personal Details</h2>
+    <p><strong>Name:</strong> Lovish Sthathia</p>
+    <p><strong>Location:</strong> Cottbus, Germany</p>
+    <p><strong>Email:</strong><br> sthathialovish@gmail.com</p>
+    <p><strong>Phone:</strong><br> +49 155 10934109</p>
 
     <h2>Skills</h2>
-    <div class="skills">
-      <span>SAP</span>
-      <span>Power BI</span>
-      <span>SQL</span>
-      <span>Python</span>
-      <span>Excel</span>
-      <span>SPSS</span>
-      <span>R Studio</span>
-      <span>Business Analysis</span>
-      <span>IT Support</span>
-    </div>
-
-    <h2>Education</h2>
     <ul>
-      <li>MSc. Data Science – UE Potsdam (2023–2024)</li>
-      <li>MBA, Business Analysis – Business Analytics – SMVD University (2018–2020)</li>
-      <li>B.Tech, Mechanical Engineering – Kurukshetra University (2012–2016)</li>
+      <li>SAP</li>
+      <li>Business Analysis</li>
+      <li>Power BI</li>
+      <li>SQL</li>
+      <li>Python</li>
+      <li>Excel</li>
+      <li>IT Support</li>
     </ul>
 
     <h2>Languages</h2>
     <ul>
       <li>English – C1</li>
-      <li>German – B1</li>
+      <li>German – A2</li>
     </ul>
-
   </div>
 
-  <!-- FOOTER -->
-  <div class="footer">
-    © Lovish Sthathia · SAP Consultant / Business Analyst
+  <!-- RIGHT COLUMN -->
+  <div class="right">
+    <div class="name">Lovish Sthathia</div>
+    <div class="title">SAP Consultant / Business Analyst</div>
+
+    <div class="section">
+      <h3>Profile</h3>
+      <p>
+        Results-driven SAP Consultant and Business Analyst with experience in business
+        analysis, data analytics, and SAP-based reporting. Currently working as a
+        Junior IT Support Mitarbeiter, gaining hands-on experience in IT systems,
+        troubleshooting, and user support.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>Professional Experience</h3>
+
+      <div class="job-title">Junior IT Support Mitarbeiter</div>
+      <div class="job-meta">Techzone Mobile – Leipzig, Germany | July 2025 – Present</div>
+      <ul>
+        <li>Providing first-level IT support for hardware, software, and mobile devices.</li>
+        <li>Troubleshooting system, network, and application-related issues.</li>
+        <li>Supporting users and maintaining IT documentation.</li>
+      </ul>
+
+      <div class="job-title">Data & Business Analysis Associate</div>
+      <div class="job-meta">SatPar Infotech Pvt. Ltd. | Jan 2021 – Jan 2024</div>
+      <ul>
+        <li>Developed Power BI dashboards and Excel reports.</li>
+        <li>Conducted market research and automated reporting.</li>
+        <li>Delivered insights to cross-functional teams.</li>
+      </ul>
+
+      <div class="job-title">Business Analytics Intern</div>
+      <div class="job-meta">Hindustan Coca-Cola Beverages | May 2019 – Jul 2019</div>
+      <ul>
+        <li>Worked on marketing analytics and SAP exposure.</li>
+        <li>Optimized logistics processes, reducing transport costs by 5%.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3>Education</h3>
+      <ul>
+        <li>MSc. Data Science – UE Potsdam (2023–2024)</li>
+        <li>MBA – Business Analytics – SMVD University (2018–2020)</li>
+        <li>B.Tech – Mechanical Engineering – Kurukshetra University (2012–2016)</li>
+      </ul>
+    </div>
+
   </div>
 
 </div>
