@@ -121,10 +121,20 @@
   font-size: 13px;
   border-radius: 4px;
 }
+/* Hide buttons while printing PDF */
+@media print {
+  .no-print {
+    display: none !important;
+  }
 
-.lang-buttons a:hover {
-  background: #0a66c2;
-  color: #ffffff;
+  body {
+    background: #ffffff;
+  }
+
+  .cv {
+    box-shadow: none;
+    margin: 0;
+  }
 }
     
   </style>
@@ -187,8 +197,8 @@
     <div class="name">Lovish Sthathia</div>
     <div class="title">SAP Berater / Business Analyst</div>
 
-    <div class="lang-buttons">
-  <a href="../">🇬🇧 English CV</a>
+    <div class="lang-buttons no-print">
+  <a href="../index.html">English CV</a>
   <a href="../Lovish_Sthathia_Lebenslauf_DE.pdf" download>⬇ Lebenslauf (PDF)</a>
 </div>
     
