@@ -1,331 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Lovish Sthathia – Business Analyst | SAP Consultant | Unternehmensstrategie & Prozessoptimierung</title>
+    <meta charset="UTF-8">
+    <title>Lovish Sthathia – Business Analyst | SAP Consultant | Unternehmensstrategie & Prozessoptimierung</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f2f2f2;
-      color: #333;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #333;
+        }
 
-    .cv {
-      max-width: 1000px;
-      margin: 30px auto;
-      background: #ffffff;
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
+        .cv {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #ffffff;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
 
-    /* LEFT COLUMN */
-    .left {
-      background: #f7f7f7;
-      padding: 30px 25px;
-    }
+        /* LEFT COLUMN */
+        .left {
+            background: #f7f7f7;
+            padding: 30px 25px;
+        }
 
-    .photo {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    .photo img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 6px;
-      border: 3px solid #ddd;
-    }
+        .photo img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 3px solid #ddd;
+        }
 
-    .left h2 {
-      font-size: 16px;
-      margin-top: 25px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-      text-transform: uppercase;
-    }
+        .left h2 {
+            font-size: 16px;
+            margin-top: 25px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
 
-    .left p, .left li {
-      font-size: 14px;
-      margin: 6px 0;
-    }
+        .left p,
+        .left li {
+            font-size: 14px;
+            margin: 6px 0;
+        }
 
-    .left ul {
-      padding-left: 16px;
-      margin: 8px 0;
-    }
+        .left ul {
+            padding-left: 16px;
+            margin: 8px 0;
+        }
 
-    /* RIGHT COLUMN */
-    .right {
-      padding: 35px 40px;
-    }
+        /* RIGHT COLUMN */
+        .right {
+            padding: 35px 40px;
+        }
 
-    .name {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-    .title {
-      font-size: 18px;
-      color: #0a66c2;
-      margin-bottom: 20px;
-    }
+        .title {
+            font-size: 18px;
+            color: #0a66c2;
+            margin-bottom: 20px;
+        }
 
-    .section {
-      margin-bottom: 28px;
-    }
+        .section {
+            margin-bottom: 28px;
+        }
 
-    .section h3 {
-      font-size: 18px;
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 6px;
-      margin-bottom: 10px;
-    }
+        .section h3 {
+            font-size: 18px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
 
-    .job-title {
-      font-weight: bold;
-      font-size: 15px;
-    }
+        .job-title {
+            font-weight: bold;
+            font-size: 15px;
+        }
 
-    .job-meta {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 6px;
-    }
+        .job-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 6px;
+        }
 
-    .right ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
+        .right ul {
+            padding-left: 18px;
+            margin-top: 6px;
+        }
 
-    .right li {
-      margin-bottom: 6px;
-      font-size: 14px;
-    }
+        .right li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
 
-    .lang-buttons {
-  margin: 15px 0 25px 0;
-}
+        .lang-buttons {
+            margin: 15px 0 25px 0;
+        }
 
-.lang-buttons a {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-right: 8px;
-  border: 1px solid #0a66c2;
-  color: #0a66c2;
-  text-decoration: none;
-  font-size: 13px;
-  border-radius: 4px;
-}
-/* Hide buttons while printing PDF */
-@media print {
-  .no-print {
-    display: none !important;
-  }
+        .lang-buttons a {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-right: 8px;
+            border: 1px solid #0a66c2;
+            color: #0a66c2;
+            text-decoration: none;
+            font-size: 13px;
+            border-radius: 4px;
+        }
 
-  body {
-    background: #ffffff;
-  }
+        /* Hide buttons while printing PDF */
+        @media print {
+            .no-print {
+                display: none !important;
+            }
 
-  .cv {
-    box-shadow: none;
-    margin: 0;
-  }
-}
-    
-  </style>
+            body {
+                background: #ffffff;
+            }
+
+            .cv {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="cv">
 
-  <div class="left">
-    <div class="photo">
-      <img src="profile.jpg" alt="Lovish Sthathia">
+    <!-- LEFT COLUMN -->
+    <div class="left">
+
+        <div class="photo">
+            <img src="profile.jpg" alt="Lovish Sthathia">
+        </div>
+
+        <h2>Personal Details</h2>
+
+        <p><strong>Name:</strong> Lovish Sthathia</p>
+        <p><strong>Location:</strong> Leipzig, Germany</p>
+        <p><strong>Email:</strong><br> sthathialovish@gmail.com</p>
+        <p><strong>Phone:</strong><br> +49 155 10934109</p>
+        <p><strong>Portfolio:</strong><br> https://lsthathia.github.io</p>
+        <p><strong>Github:</strong><br> https://github.com/lsthathia</p>
+        <p><strong>Linkedin:</strong><br> https://www.linkedin.com/in/lovish-sthathia-864292125</p>
+
+        <h2>Certifications</h2>
+
+        <ul>
+            <li>Business Analytics for Decision Making – University of Colorado (Coursera)</li>
+            <li>Entrepreneurship Strategy – HEC Paris (Coursera)</li>
+            <li>Business Model Canvas – University of Virginia (Coursera)</li>
+            <li>Organizational Behavior – Punjab University (SWAYAM)</li>
+            <li>Marketing Research and Analysis-II – IIT Roorkee (NPTEL)</li>
+            <li>Certificate in Computer Applications – CIIT</li>
+            <li>Computer Aided Drafting – NIELIT Srinagar/Jammu</li>
+            <li>NCC A-Certificate – National Cadet Corps</li>
+        </ul>
+
+        <h2>Skills</h2>
+
+        <ul>
+            <li>SAP</li>
+            <li>Business Analysis</li>
+            <li>Power BI</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>Excel</li>
+            <li>Unternehmensstrategie</li>
+            <li>Business Case Entwicklung</li>
+            <li>KPI Reporting & Dashboarding</li>
+            <li>JIRA (Grundkenntnisse)</li>
+            <li>SPSS</li>
+            <li>R Studio</li>
+            <li>Ticket Handling</li>
+            <li>System Monitoring</li>
+            <li>SAP Data Analysis</li>
+            <li>SAP Process Optimization</li>
+            <li>IT Support</li>
+        </ul>
+
+        <h2>Fachliches Verständnis</h2>
+
+        <ul>
+            <li>Energiebranche – Grundverständnis</li>
+            <li>Business Model Analyse</li>
+            <li>Unternehmensentwicklung</li>
+            <li>Strategische Planung</li>
+            <li>Investitionsbewertung</li>
+            <li>Innovationsmanagement</li>
+        </ul>
+
+        <h2>Languages</h2>
+
+        <ul>
+            <li>English – C1</li>
+            <li>German – B1 (aktiv in Weiterbildung Richtung B2)</li>
+        </ul>
+
     </div>
 
-    <h2>Personal Details</h2>
-    <p><strong>Name:</strong> Lovish Sthathia</p>
-    <p><strong>Location:</strong> Leipzig, Germany</p>
-    <p><strong>Email:</strong><br> sthathialovish@gmail.com</p>
-    <p><strong>Phone:</strong><br> +49 155 10934109</p>
-    <p><strong>Portfolio:</strong><br> https://lsthathia.github.io</p>
-    <p><strong>Github:</strong><br> https://github.com/lsthathia</p>
-    <p><strong>Linkedin:</strong><br> https://www.linkedin.com/in/lovish-sthathia-864292125</p>
+    <!-- RIGHT COLUMN -->
+    <div class="right">
 
-    <h2>Certifications</h2>
-    <ul>
-      <li>Business Analytics for Decision Making – University of Colorado (Coursera)</li>
-      <li>Entrepreneurship Strategy – HEC Paris (Coursera)</li>
-      <li>Business Model Canvas – University of Virginia (Coursera)</li>
-      <li>Organizational Behavior – Punjab University (SWAYAM)</li>
-      <li>Marketing Research and Analysis-II – IIT Roorkee (NPTEL)</li>
-      <li>Certificate in Computer Applications – CIIT</li>
-      <li>Computer Aided Drafting – NIELIT Srinagar/Jammu</li>
-      <li>NCC A-Certificate – National Cadet Corps</li>
-    </ul>
+        <div class="name">Lovish Sthathia</div>
 
-    <h2>Skills</h2>
-    <ul>
-      <li>SAP</li>
-      <li>Business Analysis</li>
-      <li>Power BI</li>
-      <li>SQL</li>
-      <li>Python</li>
-      <li>Excel</li>
-      <li>Unternehmensstrategie</li>
-      <li>Business Case Entwicklung</li>
-      <li>KPI Reporting & Dashboarding</li>
-      <li>JIRA (Grundkenntnisse)</li>
-      <li>SPSS</li>
-      <li>R Studio</li>
-      <li>Ticket Handling</li>
-      <li>System Monitoring</li>
-      <li>SAP Data Analysis</li>
-      <li>SAP Process Optimization</li>
-      <li>IT Support</li>
-    </ul>
+        <div class="title">
+            Business Analyst | SAP Consultant | Unternehmensstrategie & Prozessoptimierung
+        </div>
 
-    <h2>Fachliches Verständnis</h2>
-    <ul>
-      <li>Energiebranche – Grundverständnis</li>
-      <li>Business Model Analyse</li>
-      <li>Unternehmensentwicklung</li>
-      <li>Strategische Planung</li>
-      <li>Investitionsbewertung</li>
-      <li>Innovationsmanagement</li>
-    </ul>
+        <div class="lang-buttons no-print">
+            <a href="de/">🇩🇪 Deutscher Lebenslauf</a>
+            <a href="Lovish_Sthathia_CV.pdf" download>⬇ Download CV (PDF)</a>
+        </div>
 
-    <h2>Languages</h2>
-    <ul>
-      <li>English – C1</li>
-      <li>German – B1 (aktiv in Weiterbildung Richtung B2)</li>
-    </ul>
-  </div>
+        <div class="section">
+            <h3>Profile</h3>
 
-  <!-- RIGHT COLUMN -->
-  <div class="right">
-    <div class="name">Lovish Sthathia</div>
-    <div class="title">Business Analyst | SAP Consultant | Unternehmensstrategie & Prozessoptimierung</div>
+            <p>
+                Ergebnisorientierter Business Analyst und SAP Consultant mit fundierter Erfahrung in Business Analyse,
+                Marktintelligenz, Prozessoptimierung und strategischer Entscheidungsunterstützung.
+                Erfahrung in SAP-Datenanalyse, KPI-Reporting, Business Case Entwicklung sowie
+                bereichsübergreifender Zusammenarbeit zur Verbesserung operativer und geschäftlicher Leistungen.
+                Derzeit tätig im IT-Support und gleichzeitig Ausbau der Expertise in Unternehmensstrategie,
+                Business Development und Prozessverbesserung. Starke analytische Denkweise mit praktischer
+                Erfahrung in SQL, Power BI, Python und SAP-Systemen für datenbasierte Entscheidungen und
+                Unternehmenstransformation.
+            </p>
+        </div>
 
-    <div class="lang-buttons no-print">
-  <a href="de/">🇩🇪 Deutscher Lebenslauf</a>
-  <a href="Lovish_Sthathia_CV.pdf" download>⬇ Download CV (PDF)</a>
-</div>
-    
-    <div class="section">
-      <h3>Profile</h3>
-      <p>
-        Ergebnisorientierter Business Analyst und SAP Consultant mit fundierter Erfahrung in Business Analyse, Marktintelligenz, Prozessoptimierung und strategischer Entscheidungsunterstützung.
-        Erfahrung in SAP-Datenanalyse, KPI-Reporting, Business Case Entwicklung sowie bereichsübergreifender Zusammenarbeit zur Verbesserung operativer und geschäftlicher Leistungen.
-        Derzeit tätig im IT-Support und gleichzeitig Ausbau der Expertise in Unternehmensstrategie, Business Development und Prozessverbesserung. Starke analytische Denkweise mit praktischer Erfahrung in SQL, Power BI, Python und SAP-Systemen für datenbasierte Entscheidungen und Unternehmenstransformation.
-      </p>
+        <div class="section">
+            <h3>Professional Experience</h3>
+
+            <div class="job-title">Junior IT Support Mitarbeiter</div>
+            <div class="job-meta">Techzone Mobile – Leipzig, Germany | July 2025 – Present</div>
+
+            <ul>
+                <li>First-Level-Support für Hardware-, Software- und systembezogene Störungen.</li>
+                <li>Unterstützung bei Systemüberwachung, Fehleranalyse und Dokumentation technischer Vorfälle.</li>
+                <li>Pflege operativer Daten und Verbesserung der Prozesstransparenz durch strukturierte Reportings.</li>
+                <li>Unterstützung der Anwender bei technischen Problemlösungen und der Optimierung von Arbeitsabläufen.</li>
+            </ul>
+
+            <div class="job-title">Data & Business Analysis Associate</div>
+            <div class="job-meta">SatPar Infotech Pvt. Ltd. | Jan 2021 – Jan 2024</div>
+
+            <ul>
+                <li>Worked on SAP data analysis and reporting, supporting business operations and management decision-making.</li>
+                <li>Designed Power BI dashboards using SAP data to track KPIs related to sales, operations, and network performance.</li>
+                <li>Collaborated with functional teams to translate business requirements into SAP-based reports and KPIs.</li>
+                <li>Supported SAP master data handling, data cleansing, and data consistency checks.</li>
+                <li>Automated recurring SAP reports using Excel, Power BI, and SQL, reducing manual reporting effort.</li>
+                <li>Provided analytical support for business process analysis aligned with SAP modules.</li>
+                <li>Extrahierte, validierte und analysierte Daten aus SAP-Systemen (SAP ERP/SAP BW) zur Erstellung von operativen und Leistungsberichten.</li>
+                <li>Unterstützte die Optimierung von SAP-Prozessen durch die Identifikation von Datenlücken, Ineffizienzen und Verbesserungspotenzialen in Geschäftsabläufen.</li>
+            </ul>
+                     <div class="job-title">Business Analytics Intern</div>
+            <div class="job-meta">Hindustan Coca-Cola Beverages | May 2019 – Jul 2019</div>
+
+            <ul>
+                <li>Worked on marketing analysis projects and SAP-related activities.</li>
+                <li>Optimized logistics processes, reducing transport costs by 5%.</li>
+            </ul>
+
+            <div class="job-title">Lecturer</div>
+            <div class="job-meta">CIIT Institute | Jun 2016 – May 2017</div>
+
+            <ul>
+                <li>Delivered engaging lectures and tutorials to undergraduate students.</li>
+                <li>Developed lesson plans, course materials, and assessment strategies.</li>
+                <li>Evaluated student performance through assignments, quizzes, and exams.</li>
+                <li>Provided academic guidance and mentoring to support student success.</li>
+                <li>Collaborated with faculty members to enhance curriculum quality.</li>
+            </ul>
+
+        </div>
+
+        <div class="section">
+            <h3>Education</h3>
+
+            <ul>
+                <li>MSc. Data Science – UE Potsdam (2023–2024)</li>
+                <li>MBA – Business Analytics – SMVD University (2018–2020)</li>
+                <li>B.Tech – Mechanical Engineering – Kurukshetra University (2012–2016)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>Projects</h3>
+
+            <div class="job-title">Marketing Analysis Project – Coca-Cola</div>
+
+            <ul>
+                <li>Conducted detailed marketing analysis of Coca-Cola products during internship.</li>
+                <li>Analyzed sales performance and customer demand patterns.</li>
+            </ul>
+
+            <div class="job-title">Business Case & Strategische Portfolioanalyse</div>
+
+            <ul>
+                <li>Entwicklung von Business-Case-Modellen zur Unterstützung operativer Verbesserungen und Investitionsentscheidungen.</li>
+                <li>Durchführung von Marktbewertungen, Wettbewerbsanalysen und Profitabilitätsbewertungen für die Unternehmensplanung.</li>
+            </ul>
+
+            <div class="job-title">Logistics Cost Optimization Project</div>
+
+            <ul>
+                <li>Analyzed logistics operations and transportation costs.</li>
+                <li>Achieved a 5% reduction in transportation expenses through data-driven insights.</li>
+            </ul>
+
+            <div class="job-title">Business Analytics & KPI Dashboard</div>
+
+            <ul>
+                <li>Designed Power BI dashboards to track KPIs and operational performance.</li>
+                <li>Supported management decision-making with real-time data visualization.</li>
+            </ul>
+
+            <div class="job-title">Sales Forecasting & Market Trend Analysis</div>
+
+            <ul>
+                <li>Performed sales forecasting using historical data and market trends.</li>
+                <li>Supported revenue planning and regional performance evaluation.</li>
+            </ul>
+
+        </div>
+
+        <div class="section">
+            <h3>Publications</h3>
+
+            <p>
+                <strong>How Small Scale Industries Achieve Sustainable Goals</strong><br>
+                Published on Aim2Flourish<br>
+
+                <a href="https://aim2flourish.com/innovations/marking-overseas-by-enabling-overseers" target="_blank">
+                    View Publication
+                </a>
+            </p>
+        </div>
+
     </div>
-
-    <div class="section">
-      <h3>Professional Experience</h3>
-
-      <div class="job-title">Junior IT Support Mitarbeiter</div>
-      <div class="job-meta">Techzone Mobile – Leipzig, Germany | July 2025 – Present</div>
-      <ul>
-        <li>First-Level-Support für Hardware-, Software- und systembezogene Störungen.</li>
-        <li>Unterstützung bei Systemüberwachung, Fehleranalyse und Dokumentation technischer Vorfälle.</li>
-        <li>Pflege operativer Daten und Verbesserung der Prozesstransparenz durch strukturierte Reportings.</li>
-        <li>Unterstützung der Anwender bei technischen Problemlösungen und der Optimierung von Arbeitsabläufen.</li>
-      </ul>
-      
-      <div class="job-title">Data & Business Analysis Associate</div>
-      <div class="job-meta">SatPar Infotech Pvt. Ltd. | Jan 2021 – Jan 2024</div>
-      <ul>
-        <li>Worked on SAP data analysis and reporting, supporting business operations and management decision-making.</li>
-        <li>Designed Power BI dashboards using SAP data to track KPIs related to sales, operations, and network performance.</li>
-        <li>Collaborated with functional teams to translate business requirements into SAP-based reports and KPIs.</li>
-        <li>Supported SAP master data handling, data cleansing, and data consistency checks.</li>
-        <li>Automated recurring SAP reports using Excel, Power BI, and SQL, reducing manual reporting effort.</li>
-        <li>Provided analytical support for business process analysis aligned with SAP modules.</li>
-        <li>Extrahierte, validierte und analysierte Daten aus SAP-Systemen (SAP ERP/SAP BW) zur Erstellung von operativen und Leistungsberichten.</li>
-        <li>Unterstützte die Optimierung von SAP-Prozessen durch die Identifikation von Datenlücken, Ineffizienzen und Verbesserungspotenzialen in Geschäftsabläufen.</li>
-      </ul>
-
-      <div class="job-title">Business Analytics Intern</div>
-      <div class="job-meta">Hindustan Coca-Cola Beverages | May 2019 – Jul 2019</div>
-      <ul>
-        <li>Worked on marketing analysis projects and SAP-related activities.</li>
-        <li>Optimized logistics processes, reducing transport costs by 5%.</li>
-      </ul>
-
-      <div class="job-title">Lecturer</div>
-      <div class="job-meta">CIIT Institute | Jun 2016 – May 2017</div>
-      <ul>
-        <li>Delivered engaging lectures and tutorials to undergraduate students.</li>
-        <li>Developed lesson plans, course materials, and assessment strategies.</li>
-        <li>Evaluated student performance through assignments, quizzes, and exams.</li>
-        <li>Provided academic guidance and mentoring to support student success.</li>
-        <li>Collaborated with faculty members to enhance curriculum quality.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h3>Education</h3>
-      <ul>
-        <li>MSc. Data Science – UE Potsdam (2023–2024)</li>
-        <li>MBA – Business Analytics – SMVD University (2018–2020)</li>
-        <li>B.Tech – Mechanical Engineering – Kurukshetra University (2012–2016)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-  <h3>Projects</h3>
-
-  <div class="job-title">Marketing Analysis Project – Coca-Cola</div>
-  <ul>
-    <li>Conducted detailed marketing analysis of Coca-Cola products during internship.</li>
-    <li>Analyzed sales performance and customer demand patterns.</li>
-  </ul>
-
-  <div class="job-title">Business Case & Strategische Portfolioanalyse</div>
-  <ul>
-    <li>Entwicklung von Business-Case-Modellen zur Unterstützung operativer Verbesserungen und Investitionsentscheidungen.</li>
-    <li>Durchführung von Marktbewertungen, Wettbewerbsanalysen und Profitabilitätsbewertungen für die Unternehmensplanung.</li>
-  </ul>
-      
-  <div class="job-title">Logistics Cost Optimization Project</div>
-  <ul>
-    <li>Analyzed logistics operations and transportation costs.</li>
-    <li>Achieved a 5% reduction in transportation expenses through data-driven insights.</li>
-  </ul>
-
-  <div class="job-title">Business Analytics & KPI Dashboard</div>
-  <ul>
-    <li>Designed Power BI dashboards to track KPIs and operational performance.</li>
-    <li>Supported management decision-making with real-time data visualization.</li>
-  </ul>
-
-  <div class="job-title">Sales Forecasting & Market Trend Analysis</div>
-  <ul>
-    <li>Performed sales forecasting using historical data and market trends.</li>
-    <li>Supported revenue planning and regional performance evaluation.</li>
-  </ul>
-</div>
-
-    <div class="section">
-  <h3>Publications</h3>
-
-  <p>
-    <strong>How Small Scale Industries Achieve Sustainable Goals</strong><br>
-    Published on Aim2Flourish<br>
-    <a href="https://aim2flourish.com/innovations/marking-overseas-by-enabling-overseers" target="_blank">
-      View Publication
-    </a>
-  </p>
-</div>
-
-  </div>
 
 </div>
 
