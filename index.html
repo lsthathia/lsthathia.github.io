@@ -1,238 +1,365 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Lovish Sthathia – Business Analyst | SAP Consultant | Corporate Strategy & Process Optimization</title>
+    <meta charset="UTF-8">
+    <title>Lovish Sthathia – Business Analyst | SAP Consultant | Business Strategy & Process Optimization</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: #f2f2f2;
-      color: #333;
-    }
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f2f2f2;
+            color: #333;
+        }
 
-    .cv {
-      max-width: 1000px;
-      margin: 30px auto;
-      background: #ffffff;
-      display: grid;
-      grid-template-columns: 320px 1fr;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-    }
+        .cv {
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #ffffff;
+            display: grid;
+            grid-template-columns: 320px 1fr;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
 
-    .left {
-      background: #f7f7f7;
-      padding: 30px 25px;
-    }
+        /* LEFT COLUMN */
+        .left {
+            background: #f7f7f7;
+            padding: 30px 25px;
+        }
 
-    .photo {
-      text-align: center;
-      margin-bottom: 20px;
-    }
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-    .photo img {
-      width: 180px;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 6px;
-      border: 3px solid #ddd;
-    }
+        .photo img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 3px solid #ddd;
+        }
 
-    .left h2 {
-      font-size: 16px;
-      margin-top: 25px;
-      border-bottom: 1px solid #ccc;
-      padding-bottom: 5px;
-      text-transform: uppercase;
-    }
+        .left h2 {
+            font-size: 16px;
+            margin-top: 25px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            text-transform: uppercase;
+        }
 
-    .left p, .left li {
-      font-size: 14px;
-      margin: 6px 0;
-    }
+        .left p,
+        .left li {
+            font-size: 14px;
+            margin: 6px 0;
+        }
 
-    .left ul {
-      padding-left: 16px;
-      margin: 8px 0;
-    }
+        .left ul {
+            padding-left: 16px;
+            margin: 8px 0;
+        }
 
-    .right {
-      padding: 35px 40px;
-    }
+        /* RIGHT COLUMN */
+        .right {
+            padding: 35px 40px;
+        }
 
-    .name {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 5px;
-    }
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
 
-    .title {
-      font-size: 18px;
-      color: #0a66c2;
-      margin-bottom: 20px;
-    }
+        .title {
+            font-size: 18px;
+            color: #0a66c2;
+            margin-bottom: 20px;
+        }
 
-    .section {
-      margin-bottom: 28px;
-    }
+        .section {
+            margin-bottom: 28px;
+        }
 
-    .section h3 {
-      font-size: 18px;
-      border-bottom: 2px solid #e0e0e0;
-      padding-bottom: 6px;
-      margin-bottom: 10px;
-    }
+        .section h3 {
+            font-size: 18px;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 6px;
+            margin-bottom: 10px;
+        }
 
-    .job-title {
-      font-weight: bold;
-      font-size: 15px;
-    }
+        .job-title {
+            font-weight: bold;
+            font-size: 15px;
+        }
 
-    .job-meta {
-      font-size: 14px;
-      color: #666;
-      margin-bottom: 6px;
-    }
+        .job-meta {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 6px;
+        }
 
-    .right ul {
-      padding-left: 18px;
-      margin-top: 6px;
-    }
+        .right ul {
+            padding-left: 18px;
+            margin-top: 6px;
+        }
 
-    .right li {
-      margin-bottom: 6px;
-      font-size: 14px;
-    }
+        .right li {
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
 
-    .lang-buttons {
-      margin: 15px 0 25px 0;
-    }
+        .lang-buttons {
+            margin: 15px 0 25px 0;
+        }
 
-    .lang-buttons a {
-      display: inline-block;
-      padding: 6px 12px;
-      margin-right: 8px;
-      border: 1px solid #0a66c2;
-      color: #0a66c2;
-      text-decoration: none;
-      font-size: 13px;
-      border-radius: 4px;
-    }
+        .lang-buttons a {
+            display: inline-block;
+            padding: 6px 12px;
+            margin-right: 8px;
+            border: 1px solid #0a66c2;
+            color: #0a66c2;
+            text-decoration: none;
+            font-size: 13px;
+            border-radius: 4px;
+        }
 
-    @media print {
-      .no-print {
-        display: none !important;
-      }
+              @media print {
+            .no-print {
+                display: none !important;
+            }
 
-      body {
-        background: #ffffff;
-      }
+            body {
+                background: #ffffff;
+            }
 
-      .cv {
-        box-shadow: none;
-        margin: 0;
-      }
-    }
-  </style>
+            .cv {
+                box-shadow: none;
+                margin: 0;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
 <div class="cv">
 
-  <div class="left">
-    <div class="photo">
-      <img src="profile.jpg" alt="Lovish Sthathia">
+    <!-- LEFT COLUMN -->
+    <div class="left">
+
+        <div class="photo">
+            <img src="profile.jpg" alt="Lovish Sthathia">
+        </div>
+
+        <h2>Personal Details</h2>
+
+        <p><strong>Name:</strong> Lovish Sthathia</p>
+        <p><strong>Location:</strong> Leipzig, Germany</p>
+        <p><strong>Email:</strong><br> sthathialovish@gmail.com</p>
+        <p><strong>Phone:</strong><br> +49 155 10934109</p>
+        <p><strong>Portfolio:</strong><br> https://lsthathia.github.io</p>
+        <p><strong>Github:</strong><br> https://github.com/lsthathia</p>
+        <p><strong>Linkedin:</strong><br> https://www.linkedin.com/in/lovish-sthathia-864292125</p>
+
+        <h2>Certifications</h2>
+
+        <ul>
+            <li>Business Analytics for Decision Making – University of Colorado (Coursera)</li>
+            <li>Entrepreneurship Strategy – HEC Paris (Coursera)</li>
+            <li>Business Model Canvas – University of Virginia (Coursera)</li>
+            <li>Organizational Behavior – Punjab University (SWAYAM)</li>
+            <li>Marketing Research and Analysis-II – IIT Roorkee (NPTEL)</li>
+            <li>Certificate in Computer Applications – CIIT</li>
+            <li>Computer Aided Drafting – NIELIT Srinagar/Jammu</li>
+            <li>NCC A-Certificate – National Cadet Corps</li>
+        </ul>
+
+        <h2>Skills</h2>
+
+        <ul>
+            <li>SAP</li>
+            <li>Business Analysis</li>
+            <li>Power BI</li>
+            <li>SQL</li>
+            <li>Python</li>
+            <li>Excel</li>
+            <li>Business Strategy</li>
+            <li>Business Case Development</li>
+            <li>KPI Reporting & Dashboarding</li>
+            <li>JIRA (Basic Knowledge)</li>
+            <li>SPSS</li>
+            <li>R Studio</li>
+            <li>Ticket Handling</li>
+            <li>System Monitoring</li>
+            <li>SAP Data Analysis</li>
+            <li>SAP Process Optimization</li>
+            <li>IT Support</li>
+        </ul>
+
+              <h2>Professional Understanding</h2>
+
+        <ul>
+            <li>Energy Industry – Basic Understanding</li>
+            <li>Business Model Analysis</li>
+            <li>Business Development</li>
+            <li>Strategic Planning</li>
+            <li>Investment Evaluation</li>
+            <li>Innovation Management</li>
+        </ul>
+
+        <h2>Languages</h2>
+
+        <ul>
+            <li>English – C1</li>
+            <li>German – B1 (actively improving toward B2)</li>
+        </ul>
+
     </div>
 
-    <h2>Personal Details</h2>
-    <p><strong>Name:</strong> Lovish Sthathia</p>
-    <p><strong>Location:</strong> Leipzig, Germany</p>
-    <p><strong>Email:</strong><br> sthathialovish@gmail.com</p>
-    <p><strong>Phone:</strong><br> +49 155 10934109</p>
-    <p><strong>Portfolio:</strong><br> https://lsthathia.github.io</p>
-    <p><strong>Github:</strong><br> https://github.com/lsthathia</p>
-    <p><strong>LinkedIn:</strong><br> https://www.linkedin.com/in/lovish-sthathia-864292125</p>
+    <!-- RIGHT COLUMN -->
+    <div class="right">
 
-    <h2>Certifications</h2>
+        <div class="name">Lovish Sthathia</div>
 
-    <h2>Core Skills</h2>
+        <div class="title">
+            Business Analyst | SAP Consultant | Business Strategy & Process Optimization
+        </div>
 
-    <h2>Domain Knowledge</h2>
+        <div class="lang-buttons no-print">
+            <a href="/de/">German Resume</a>
+            <a href="Lovish_Sthathia_CV.pdf" download>⬇ Download Resume (PDF)</a>
+        </div>
 
-    <h2>Languages</h2>
-    <ul>
-      <li>English – C1</li>
-      <li>German – B1 (actively improving toward B2)</li>
-    </ul>
-  </div>
+        <div class="section">
+            <h3>Profile</h3>
 
-  <div class="right">
-    <div class="name">Lovish Sthathia</div>
-    <div class="title">Business Analyst | SAP Consultant | Corporate Strategy & Process Optimization</div>
+            <p>
+                Result-oriented Business Analyst and SAP Consultant with strong experience in Business Analysis,
+                Market Intelligence, Process Optimization, and Strategic Decision Support.
+                Experience in SAP Data Analysis, KPI Reporting, Business Case Development, and
+                cross-functional collaboration to improve operational and business performance.
+                Currently working in IT Support while continuously expanding expertise in Business Strategy,
+                Business Development, and Process Improvement. Strong analytical mindset with practical
+                experience in SQL, Power BI, Python, and SAP systems for data-driven decisions and
+                business transformation.
+            </p>
+        </div>
 
-    <div class="lang-buttons no-print">
-      <a href="de/">🇩🇪 German Resume</a>
-      <a href="Lovish_Sthathia_CV.pdf" download>⬇ Download CV (PDF)</a>
+        <div class="section">
+            <h3>Professional Experience</h3>
+
+            <div class="job-title">Junior IT Support Associate</div>
+            <div class="job-meta">Techzone Mobile – Leipzig, Germany | July 2025 – Present</div>
+
+            <ul>
+                <li>First-level support for hardware, software, and system-related issues.</li>
+                <li>Support in system monitoring, troubleshooting, and documentation of technical incidents.</li>
+                <li>Maintained operational data and improved process transparency through structured reporting.</li>
+                <li>Supported users in resolving technical issues and optimizing workflows.</li>
+            </ul>
+
+                      <div class="job-title">Data & Business Analysis Associate</div>
+            <div class="job-meta">SatPar Infotech Pvt. Ltd. | Jan 2021 – Jan 2024</div>
+
+            <ul>
+                <li>Worked on SAP data analysis and reporting to support business operations and management decision-making.</li>
+                <li>Developed Power BI dashboards using SAP data to track KPIs in sales, operations, and network performance.</li>
+                <li>Collaborated with functional teams to translate business requirements into SAP-based reports and KPIs.</li>
+                <li>Supported SAP master data handling, data cleansing, and data consistency checks.</li>
+                <li>Automated recurring SAP reports using Excel, Power BI, and SQL, reducing manual reporting effort.</li>
+                <li>Provided analytical support for business process analysis aligned with SAP modules.</li>
+                <li>Extracted, validated, and analyzed data from SAP systems (SAP ERP/SAP BW) for operational and performance reporting.</li>
+                <li>Supported SAP process optimization by identifying data gaps, inefficiencies, and improvement opportunities in business operations.</li>
+            </ul>
+
+            <div class="job-title">Business Analytics Intern</div>
+            <div class="job-meta">Hindustan Coca-Cola Beverages | May 2019 – July 2019</div>
+
+            <ul>
+                <li>Worked on marketing analysis projects and SAP-related activities.</li>
+                <li>Optimized logistics processes and reduced transportation costs by 5%.</li>
+            </ul>
+
+            <div class="job-title">Lecturer</div>
+            <div class="job-meta">CIIT Institute | June 2016 – May 2017</div>
+
+            <ul>
+                <li>Delivered engaging lectures and tutorials for students.</li>
+                <li>Developed lesson plans, course materials, and assessment strategies.</li>
+                <li>Evaluated student performance through assignments, tests, and examinations.</li>
+                <li>Provided academic guidance and mentoring to support student success.</li>
+                <li>Collaborated with faculty members to improve curriculum quality.</li>
+            </ul>
+
+        </div>
+
+        <div class="section">
+            <h3>Education</h3>
+
+            <ul>
+                <li>MSc. Data Science – UE Potsdam (2023–2024)</li>
+                <li>MBA – Business Analytics – SMVD University (2018–2020)</li>
+                <li>B.Tech – Mechanical Engineering – Kurukshetra University (2012–2016)</li>
+            </ul>
+        </div>
+
+              <div class="section">
+            <h3>Projects</h3>
+
+            <div class="job-title">Marketing Analysis Project – Coca-Cola</div>
+
+            <ul>
+                <li>Conducted a detailed marketing analysis of Coca-Cola products during the internship.</li>
+                <li>Analyzed sales performance and customer demand patterns.</li>
+            </ul>
+
+            <div class="job-title">Business Case & Strategic Portfolio Analysis</div>
+
+            <ul>
+                <li>Developed business case models to support operational improvements and investment decisions.</li>
+                <li>Conducted market evaluations, competitor analysis, and profitability assessments for business planning.</li>
+            </ul>
+
+            <div class="job-title">Logistics Cost Optimization Project</div>
+
+            <ul>
+                <li>Analyzed logistics operations and transportation costs.</li>
+                <li>Achieved a 5% reduction in transportation costs through data-driven insights.</li>
+            </ul>
+
+            <div class="job-title">Business Analytics & KPI Dashboard</div>
+
+            <ul>
+                <li>Developed Power BI dashboards to track KPIs and operational performance.</li>
+                <li>Supported management decision-making through real-time data visualization.</li>
+            </ul>
+
+            <div class="job-title">Sales Forecasting & Market Trend Analysis</div>
+
+            <ul>
+                <li>Performed sales forecasting using historical data and market trends.</li>
+                <li>Supported revenue planning and regional performance evaluation.</li>
+            </ul>
+
+        </div>
+
+        <div class="section">
+            <h3>Publications</h3>
+
+            <p>
+                <strong>How Small Scale Industries Achieve Sustainable Goals</strong><br>
+                Published on Aim2Flourish<br>
+
+                <a href="https://aim2flourish.com/innovations/marking-overseas-by-enabling-overseers" target="_blank">
+                    View Publication
+                </a>
+            </p>
+        </div>
+
     </div>
-
-    <div class="section">
-      <h3>Profile</h3>
-    </div>
-
-    <div class="section">
-      <h3>Professional Experience</h3>
-
-      <div class="job-title">Junior IT Support Associate</div>
-      <div class="job-meta">Techzone Mobile – Leipzig, Germany | July 2025 – Present</div>
-
-      <div class="job-title">Data & Business Analysis Associate</div>
-      <div class="job-meta">SatPar Infotech Pvt. Ltd. | Jan 2021 – Jan 2024</div>
-
-      <div class="job-title">Business Analytics Intern</div>
-      <div class="job-meta">Hindustan Coca-Cola Beverages | May 2019 – July 2019</div>
-
-      <div class="job-title">Lecturer</div>
-      <div class="job-meta">CIIT Institute | June 2016 – May 2017</div>
-    </div>
-
-    <div class="section">
-      <h3>Education</h3>
-      <ul>
-        <li>M.Sc. Data Science – UE Potsdam (2023–2024)</li>
-        <li>MBA – Business Analytics – SMVD University (2018–2020)</li>
-        <li>B.Tech – Mechanical Engineering – Kurukshetra University (2012–2016)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h3>Projects</h3>
-
-      <div class="job-title">Marketing Analysis Project – Coca-Cola</div>
-      <div class="job-title">Business Case & Strategic Portfolio Analysis</div>
-      <div class="job-title">Logistics Cost Optimization Project</div>
-      <div class="job-title">Business Analytics & KPI Dashboard</div>
-      <div class="job-title">Sales Forecasting & Market Trend Analysis</div>
-    </div>
-
-    <div class="section">
-      <h3>Publications</h3>
-
-      <p>
-        <strong>How Small Scale Industries Achieve Sustainable Goals</strong><br>
-        Published on Aim2Flourish<br>
-        <a href="https://aim2flourish.com/innovations/marking-overseas-by-enabling-overseers" target="_blank">
-          View Publication
-        </a>
-      </p>
-    </div>
-
-  </div>
 
 </div>
 
 </body>
 </html>
-```
